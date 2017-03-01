@@ -1,5 +1,5 @@
 FROM lsiobase/alpine.nginx.armhf:3.5
-MAINTAINER Stian Larsen, sparklyballs, aptalca
+MAINTAINER sparklyballs, aptalca
 
 # set version label
 ARG BUILD_DATE
