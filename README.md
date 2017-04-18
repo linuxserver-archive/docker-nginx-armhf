@@ -82,4 +82,5 @@ Add your web files to /config/www for hosting.
 
 ## Versions
 
++ **18.04.17:** Add php7-sockets
 + **01.03.17:** Intial Release.
