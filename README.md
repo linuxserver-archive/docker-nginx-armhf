@@ -3,7 +3,7 @@
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
 [appurl]: https://nginx.org/
-[hub]: https://hub.docker.com/r/lsioarmhf/nginx/
+[hub]: https://hub.docker.com/r/lsioarmhf/nginx-armhf/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,8 +12,8 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [IRC][ircurl] on freenode at `#linuxserver.io`
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
-# lsioarmhf/nginx
-[![](https://images.microbadger.com/badges/version/lsioarmhf/nginx.svg)](https://microbadger.com/images/lsioarmhf/nginx "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/nginx.svg)](https://microbadger.com/images/lsioarmhf/nginx "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/nginx.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/nginx.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-nginx)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-nginx/)
+# lsioarmhf/nginx-armhf
+[![](https://images.microbadger.com/badges/version/lsioarmhf/nginx-armhf.svg)](https://microbadger.com/images/lsioarmhf/nginx-armhf "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/nginx-armhf.svg)](https://microbadger.com/images/lsioarmhf/nginx-armhf "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/nginx-armhf.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/nginx-armhf.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-nginx)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-nginx/)
 
 This Container is a simple nginx webserver configured with default and ssl, and all relevant config files moved out the user via /config for ultimate control. it contains some of the basic php-packages. and is built on our internal nginx baseimage.
 
@@ -28,7 +28,7 @@ docker create \
 -e PGID=<gid> -e PUID=<uid>  \
 -p 80:80 -p 443:443 \
 -e TZ=<timezone> \
-lsioarmhf/nginx
+lsioarmhf/nginx-armhf
 ```
 
 ## Parameters
@@ -78,7 +78,7 @@ Add your web files to /config/www for hosting.
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/nginx`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/nginx-armhf`
 
 ## Versions
 
