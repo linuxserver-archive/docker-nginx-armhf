@@ -1,5 +1,5 @@
 FROM lsiobase/alpine.nginx.armhf:3.5
-MAINTAINER sparklyballs, aptalca
+MAINTAINER Stian Larsen, sparklyballs, aptalca
 
 # set version label
 ARG BUILD_DATE
@@ -11,8 +11,6 @@ ENV S6_BEHAVIOUR_IF_STAGE2_FAILS=2
 
 # install packages
 RUN \
- apk add --no-cache --repository http://nl.alpinelinux.org/alpine/edge/main \
-	libxslt && \
  apk add --no-cache \
 	curl \
 	nginx-mod-http-echo \
@@ -28,7 +26,12 @@ RUN \
 	nginx-mod-mail \
 	nginx-mod-rtmp \
 	nginx-mod-stream \
-	nginx-vim \
+	nginx-vim && \
+ apk add --no-cache \
+	--repository http://nl.alpinelinux.org/alpine/edge/main \
+	libwebp && \
+ apk add --no-cache \
+	--repository http://nl.alpinelinux.org/alpine/edge/community \
 	php7-ctype \
 	php7-curl \
 	php7-dom \
