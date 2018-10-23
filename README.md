@@ -5,6 +5,8 @@
 [appurl]: https://nginx.org/
 [hub]: https://hub.docker.com/r/lsioarmhf/nginx-armhf/
 
+THIS IMAGE IS DEPRECATED. PLEASE USE THE MULTI-ARCH IMAGES AT `linuxserver/nginx`
+
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
 The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
@@ -82,6 +84,7 @@ Add your web files to /config/www for hosting.
 
 ## Versions
 
++ **23.10.18:** This image is deprecated. Please use the multi-arch images at linuxserver/nginx
 + **17.08.18:** Rebase to alpine 3.8, inherit nginx.conf from nginx baseimage
 + **11.05.18:** Add php pgsql support
 + **19.04.18:** Bind memcached to localhost only, add php7-sqlite3
